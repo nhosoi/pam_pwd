@@ -1,0 +1,8 @@
+---
+- name: Setup snapshot
+  hosts: all
+  tasks:
+    - name: Install test packages
+      package:
+        name: "{{ ['authselect'] }}"
+        state: present
